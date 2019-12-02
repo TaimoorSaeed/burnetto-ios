@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UM3-2v-RUl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,25 +23,15 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="CsC-6H-0Pj">
-                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
-                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="H86-xo-5BR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YWQ-Vo-fzR"/>
                             <constraint firstItem="H86-xo-5BR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YrY-C2-jln"/>
                             <constraint firstItem="H86-xo-5BR" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="fwk-kN-hXz"/>
-                            <constraint firstItem="CsC-6H-0Pj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gZj-R9-00P"/>
-                            <constraint firstItem="CsC-6H-0Pj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i8N-ed-Mgm"/>
                             <constraint firstItem="H86-xo-5BR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="zf6-s8-PyF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="H86-xo-5BR"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="Tbt-6V-0Ld">
                         <barButtonItem key="backBarButtonItem" title=" " id="Khj-oC-22f"/>
@@ -53,7 +42,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="loadSpinner" destination="CsC-6H-0Pj" id="nY7-MY-exV"/>
+                        <outlet property="webView" destination="H86-xo-5BR" id="yRI-yc-jKZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
